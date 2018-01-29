@@ -4,6 +4,9 @@
   "description": "demo",
   "main": "index.js",
   "scripts": {
+    "entry": "node config/entry/entryBuild.js",
+    "devNew": "npm run entry && npm run devBuildHtml",
+    "devBuildHtml": "node config/webpack/webpack.devBuildHtml.conf.js",
     "dev": "webpack-dev-server --devtool eval --progress --colors --profile --config config/webpack/webpack.dev.conf.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -28,6 +31,8 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-react-hmre": "^1.1.1",
     "cache-loader": "^1.2.0",
+    "clean-webpack-plugin": "^0.1.18",
+    "copy-webpack-plugin": "^4.3.1",
     "css-loader": "^0.28.9",
     "file-loader": "^1.1.6",
     "postcss-cssnext": "^3.1.0",
