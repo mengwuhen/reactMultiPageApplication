@@ -21,12 +21,24 @@ let config = merge(baseWebpackConfig, {
         }),
         /*设置热更新*/
         new webpack.HotModuleReplacementPlugin(),
+        /* common 业务公共代码，vendor引入第三方 */
+        new webpack.optimize.CommonsChunkPlugin({
+            name: ["common", "vendor"],
+        }),
+        /* 防止 vendor hash 变化 */
+        // extract webpack runtime and module manifest to its own file in order to
+        // prevent vendor hash from being updated whenever app bundle is updated
+        new webpack.optimize.CommonsChunkPlugin({
+            name: 'manifest',
+            chunks: ['vendor']
+        }),
     ],
     module: {
         rules: [
             {
                 test: /\.(js|jsx)$/,
                 use: [
+                    'cache-loader',
                     'babel-loader',
                 ],
                 include: [
@@ -60,9 +72,9 @@ let config = merge(baseWebpackConfig, {
         proxy: [
             {
                 context: ['/api/**', '/u/**'],
-           target: 'http://192.168.12.100:8080/',
-           secure: false
-         }
+                target: 'http://192.168.12.100:8080/',
+                secure: false
+            }
         ],
         /*打开浏览器 并打开本项目网址*/
         after() {
