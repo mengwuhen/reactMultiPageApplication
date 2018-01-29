@@ -18,3 +18,8 @@
   ……这是因为你的那张百度logo图片大小没有超过8192,被base64转码了,减少了一次请求.
 
   运行 npm run prod 得到生产环境的代码 （^v^ 离成功更进一步了）
+
+## 打个 tag
+  gulp自动化发布到多个环境、生成版本号、压缩成zip等 
+  执行 npm run ptp 报错  ……Error in plugin 'gulp-vsftp' 
+  个人猜测 应该是参数写错了 
