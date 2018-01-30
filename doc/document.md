@@ -23,3 +23,9 @@
   gulp自动化发布到多个环境、生成版本号、压缩成zip等 
   执行 npm run ptp 报错  ……Error in plugin 'gulp-vsftp' 
   个人猜测 应该是参数写错了 
+
+## 打个 tag
+  TodoList实现2组件之间传递数据
+  设计原则是：尽量把增、删、改、查等逻辑方法及状态放在父组件中
+  List组件只作为展示组件，所有它页是无状态组件！
+  在父组件：TodoList中引入 List组件，并把 list状态，及删除方法传递给List组件
