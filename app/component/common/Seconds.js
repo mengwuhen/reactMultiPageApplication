@@ -23,10 +23,14 @@ class Seconds extends React.Component {
     render() {
         return (
             <div className="cont">
-                <div className="top">
-                    <i className="bd_logo1"/>
+                <div  className="top" >
                     这是{this.props.title}
                 </div>
+
+                <div  className="content" >
+                    
+                </div>
+
                 <div className="bottom">
                     Seconds: {this.state.seconds}
                 </div>
