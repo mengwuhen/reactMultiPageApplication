@@ -1,6 +1,7 @@
 import React from 'react';
 import List from './List';
 import '../../public/css/todoList.pcss'
+import apiRequest from '../../public/js/apiRequest.js'
 class TodoList extends React.Component {
     constructor(props) {
         super(props);
@@ -37,7 +38,7 @@ class TodoList extends React.Component {
     }
 
     componentDidMount() {
-
+        apiRequest.get('todoList',{}, data => this.setState({list:data.list}))
     }
 
     render() {
