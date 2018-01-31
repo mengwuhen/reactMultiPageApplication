@@ -24,6 +24,7 @@
   "homepage": "https://github.com/mengwuhen/reactMultiPageApplication#readme",
   "dependencies": {
     "axios": "^0.17.1",
+    "babel-polyfill": "^6.26.0",
     "es6-promise": "^4.2.4",
     "less": "^2.7.3",
     "lodash": "^4.17.4",
