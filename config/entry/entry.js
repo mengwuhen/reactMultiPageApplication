@@ -33,6 +33,13 @@ let entry = [
         title: 'echart案例',
         keywords: '案例,echart',
         description: '这是我们的案例'
+    },
+    {
+        name: 'g2',
+        path: 'g2/index.js',
+        title: 'g2案例',
+        keywords: '案例,g2',
+        description: '这是我们的案例'
     }
 ];
 module.exports = entry;
