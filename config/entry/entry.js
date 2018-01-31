@@ -40,6 +40,13 @@ let entry = [
         title: 'g2案例',
         keywords: '案例,g2',
         description: '这是我们的案例'
+    },
+    {
+        name: 'amap',
+        path: 'amap/index.js',
+        title: '高德地图案例',
+        keywords: '案例,高德地图',
+        description: '这是我们的案例'
     }
 ];
 module.exports = entry;
