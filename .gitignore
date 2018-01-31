@@ -1,5 +1,7 @@
 
-node_modules/
-/.cache-loader/
-pc/
-backup/
+/node_modules
+/.cache-loader
+/pc
+/backup
+/build
+/entryBuild

@@ -26,6 +26,13 @@ let entry = [
         title: '案例',
         keywords: '案例,xxx',
         description: '这是我们的案例'
+    },
+    {
+        name: 'echart',
+        path: 'echart/index.js',
+        title: 'echart案例',
+        keywords: '案例,echart',
+        description: '这是我们的案例'
     }
 ];
 module.exports = entry;
