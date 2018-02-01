@@ -8,13 +8,14 @@ nodeCommon.deleteFile(entryBuildPath);
 fs.mkdirSync(entryBuildPath);
 
 const entryContent = (data) => {
-    let cont = `<Index />`;
-    return `
-import React from 'react';
+    return(
+`import React from 'react';
 import ReactDOM from 'react-dom';
 import Index from '../app/component/${data.path}';
-ReactDOM.render(${cont},document.getElementById('app'));
-    `
+import Header from '../app/component/common/Header';
+import Footer from '../app/component/common/Footer';
+ReactDOM.render([<Header key="Header"/>,<Index key="Index"/>,<Footer key="Footer"/>],document.getElementById('app'));`
+    )
 };
 /*生成webpack entry 入口文件*/
 entry.map((data) => {

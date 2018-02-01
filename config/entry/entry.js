@@ -15,38 +15,38 @@ let entry = [
     },
     {
         name: 'demo',
-        path: 'demo/demo1/index.js',
+        path: 'demo/index.js',
         title: '案例',
         keywords: '案例,xxx',
         description: '这是我们的案例'
     },
-    {
-        name: 'demo2',
-        path: 'demo/demo2/index.js',
-        title: '案例',
-        keywords: '案例,xxx',
-        description: '这是我们的案例'
-    },
-    {
-        name: 'echart',
-        path: 'echart/index.js',
-        title: 'echart案例',
-        keywords: '案例,echart',
-        description: '这是我们的案例'
-    },
-    {
-        name: 'g2',
-        path: 'g2/index.js',
-        title: 'g2案例',
-        keywords: '案例,g2',
-        description: '这是我们的案例'
-    },
-    {
-        name: 'amap',
-        path: 'amap/index.js',
-        title: '高德地图案例',
-        keywords: '案例,高德地图',
-        description: '这是我们的案例'
-    }
+    // {
+    //     name: 'demo2',
+    //     path: 'demo/demo2/index.js',
+    //     title: '案例',
+    //     keywords: '案例,xxx',
+    //     description: '这是我们的案例'
+    // },
+    // {
+    //     name: 'echart',
+    //     path: 'echart/index.js',
+    //     title: 'echart案例',
+    //     keywords: '案例,echart',
+    //     description: '这是我们的案例'
+    // },
+    // {
+    //     name: 'g2',
+    //     path: 'g2/index.js',
+    //     title: 'g2案例',
+    //     keywords: '案例,g2',
+    //     description: '这是我们的案例'
+    // },
+    // {
+    //     name: 'amap',
+    //     path: 'amap/index.js',
+    //     title: '高德地图案例',
+    //     keywords: '案例,高德地图',
+    //     description: '这是我们的案例'
+    // }
 ];
 module.exports = entry;

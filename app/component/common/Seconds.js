@@ -1,5 +1,6 @@
 import React from 'react';
-
+import SecondsTop from './SecondsTop.js'
+import SecondsBottom from './SecondsBottom.js'
 class Seconds extends React.Component {
     constructor(props) {
         super(props);
@@ -21,19 +22,12 @@ class Seconds extends React.Component {
     }
 
     render() {
+        let state = this.state;
         return (
             <div className="cont">
-                <div  className="top" >
-                    这是{this.props.title}
-                </div>
-
-                <div  className="content" >
-                    
-                </div>
-
-                <div className="bottom">
-                    Seconds: {this.state.seconds}
-                </div>
+                <SecondsTop {...this.props} />
+                {/*这里我写了三中传值方法*/}
+                <SecondsBottom {...state}/>
             </div>
         );
     }

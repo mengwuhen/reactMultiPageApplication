@@ -37,6 +37,16 @@ let config = merge(baseWebpackConfig, {
     module: {
         rules: [
             {
+                test: /\.bundle\.js$/,
+                use: {
+                    loader: 'bundle-loader',
+                    options: {
+                        lazy: true,
+                        name: '[name]'
+                    }
+                }
+            },
+            {
                 test: /\.(js|jsx)$/,
                 use: [
                     'cache-loader',
