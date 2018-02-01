@@ -1,10 +1,10 @@
 import React from 'react';
 import List from './List';
-import '../../../public/css/todoList.pcss'
+import '../../../../public/css/todoList.pcss'
 // import apiRequest from '../../public/js/apiRequest.js'
 import "babel-polyfill";
-import apiRequestAsync from '../../../public/js/apiRequestAsync';
-import utils from '../../../public/js/utils';
+import apiRequestAsync from '../../../../public/js/apiRequestAsync';
+import utils from '../../../../public/js/utils';
 class TodoList extends React.Component {
     constructor(props) {
         super(props);

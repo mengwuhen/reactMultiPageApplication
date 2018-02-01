@@ -135,7 +135,7 @@ dv.transform({
   export default class Index extends React.Component{
       render(){
           return (
-              <div>
+              <div style={{overflow:'hidden'}}>
                     <div style={{float:'left'}}>
                         <Chart width={600} height={500} data={data} scale={cols}>
                             <Axis name="genre" />

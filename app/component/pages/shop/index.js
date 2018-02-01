@@ -1,6 +1,6 @@
 import React from 'react';
-import '../../public/css/shop.pcss'
-import utils from '../../public/js/utils';
+import '../../../public/css/shop.pcss'
+import utils from '../../../public/js/utils';
 class Index extends React.Component {
     constructor(props) {
         super(props);

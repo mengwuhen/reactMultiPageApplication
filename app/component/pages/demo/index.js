@@ -1,9 +1,9 @@
 import React from 'react';
 import {HashRouter, Route, NavLink,Redirect} from 'react-router-dom'
-import {BundleFun} from '../common/Bundle'
+import {BundleFun} from '../../common/Bundle'
 import Dome1 from './demo1/demo1.bundle.js'
 import Dome2 from './demo2/demo2.bundle.js'
-import '../../public/css/demo.pcss'
+import '../../../public/css/demo.pcss'
 const Index = () =>
     <HashRouter>
         <div className="content">

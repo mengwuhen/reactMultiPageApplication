@@ -27,7 +27,11 @@ class Header extends React.Component {
                 <div className="nav">
                     <a href="/index.html" className={this.handleNavClassName('index',1)}>首页</a>
                     <a href="/shop.html" className={this.handleNavClassName('shop')}>商城</a>
-                    <a href="/demo.html" className={this.handleNavClassName('demo')}>demo演示</a>
+                    <a href="/demo.html" className={this.handleNavClassName('demo')}>react路由演示</a>
+                    <a href="/echart.html" className={this.handleNavClassName('echart')}>echart演示</a>
+                    <a href="/g2.html" className={this.handleNavClassName('g2')}>g2演示</a>
+                    <a href="/amap.html" className={this.handleNavClassName('amap')}>高德热力图演示</a>
+                    
                 </div>
             </div>
         );

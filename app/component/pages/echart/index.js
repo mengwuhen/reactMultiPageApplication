@@ -190,7 +190,7 @@ export default class Index extends React.Component {
 
         
         return(
-            <div>
+            <div style={{overflow:'hidden'}}>
             <ReactEcharts
                 style={{height: '300px', width: '100%'}}
                 option={PieOption()}
