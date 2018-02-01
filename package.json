@@ -38,7 +38,8 @@
     "react-amap": "^1.2.0",
     "react-amap-plugin-heatmap": "0.0.7",
     "react-cookie": "^0.4.6",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

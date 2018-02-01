@@ -1,9 +1,10 @@
 import React from 'react';
 import List from './List';
-import '../../public/css/todoList.pcss'
+import '../../../public/css/todoList.pcss'
 // import apiRequest from '../../public/js/apiRequest.js'
 import "babel-polyfill";
-import apiRequestAsync from '../../public/js/apiRequestAsync';
+import apiRequestAsync from '../../../public/js/apiRequestAsync';
+import utils from '../../../public/js/utils';
 class TodoList extends React.Component {
     constructor(props) {
         super(props);
@@ -56,6 +57,8 @@ class TodoList extends React.Component {
 
     render() {
         const {list} = this.state
+
+        let {location} = this.props;
         return (
             <div className="todoList">
                 <input type="text" ref="todoInput"/>
@@ -74,6 +77,18 @@ class TodoList extends React.Component {
                         <List list={list} handleItemRecovery={this.handleItemRecovery} type={2}/>
                     </div>
                 </div>
+
+                {
+                    location ?
+                        <div>
+                            <div>hash:{location.hash}</div>
+                            <div>pathname:{location.pathname}</div>
+                            <div>search:{utils.urlParam('sort',location.search)}</div>
+                            <div>state:{location.state && location.state.fromDashboard}</div>
+                        </div>
+                        :
+                        null
+                }
             </div>
         );
     }
