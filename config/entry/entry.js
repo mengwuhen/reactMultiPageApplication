@@ -47,6 +47,13 @@ let entry = [
         title: '高德地图案例',
         keywords: '案例,高德地图',
         description: '这是我们的案例'
+    },
+    {
+        name: 'redux',
+        path: 'pages/redux/index.js',
+        title: 'redux案例',
+        keywords: '案例,redux',
+        description: '这是我们的案例'
     }
 ];
 module.exports = entry;

@@ -33,13 +33,16 @@
     "g2": "^2.3.13",
     "less": "^2.7.3",
     "lodash": "^4.17.4",
+    "prop-types": "^15.6.0",
     "qs": "^6.5.1",
     "react": "^16.2.0",
     "react-amap": "^1.2.0",
     "react-amap-plugin-heatmap": "0.0.7",
     "react-cookie": "^0.4.6",
     "react-dom": "^16.2.0",
-    "react-router-dom": "^4.2.2"
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

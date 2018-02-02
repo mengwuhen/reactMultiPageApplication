@@ -31,7 +31,7 @@ class Header extends React.Component {
                     <a href="/echart.html" className={this.handleNavClassName('echart')}>echart演示</a>
                     <a href="/g2.html" className={this.handleNavClassName('g2')}>g2演示</a>
                     <a href="/amap.html" className={this.handleNavClassName('amap')}>高德热力图演示</a>
-                    
+                    <a href="/redux.html" className={this.handleNavClassName('redux')}>redux</a>
                 </div>
             </div>
         );
